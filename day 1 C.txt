@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    float sum,average, T=90,E=99,M=77,S=90,SS=80;
+    sum=T+E+M+S+SS;
+    average=sum/5;
+    printf(" Average of the marks = %f",average);
+    return 0;
+}
