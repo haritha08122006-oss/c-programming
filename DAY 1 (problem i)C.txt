@@ -5,4 +5,5 @@ int main() {
     average=sum/5;
     printf(" Average of the marks = %f",average);
     return 0;
+
 }
