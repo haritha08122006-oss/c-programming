@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct cart{
+    int number;
+    struct cart*next;
+};
+int main()
+{
+    struct cart*ct1 = (struct cart*)malloc(sizeof(struct cart));
+    struct cart*ct2 = (struct cart*)malloc(sizeof(struct cart));
+struct cart*ct3 = (struct cart*)malloc(sizeof(struct cart));
+    
+    
+
+ scanf("%d",&ct1->number);
+      scanf(" %d",&ct2->number);
+      scanf("%d",&ct3->number);
+      
+     
+     ct3->next = ct2;
+     ct2->next = ct1;
+     ct1->next=NULL;
+    
+     
+   
+     
+     struct cart *head = ct3;
+     printf("Contact: \n");
+     while(head != NULL){
+         printf(" %d----->",head->number);
+         head = head->next;
+     }
+         printf("NULL");
+     
+     return 0;
+     }
