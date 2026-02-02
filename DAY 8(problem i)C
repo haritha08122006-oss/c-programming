@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+struct student{
+    int Id;
+    char Name[20];
+};
+
+struct address{
+    char city[20];
+    int pincode;
+    struct student name;
+};
+
+int main() {
+    struct student stud = {20,"Haritha"};
+    struct address std1 = {"Erode",638115};
+    struct student *point = &stud;
+    struct address *point1 = &std1;
+    printf("Student ID: %d\n",point->Id);
+    printf("Name: %s \n",point->Name);
+    printf("City: %s\n",point1->city);
+    printf("Pincode: %d",point1->pincode);
+    
+    return 0;
+}
